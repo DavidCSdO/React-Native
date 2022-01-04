@@ -21,27 +21,45 @@ import React from 'react';
 
 
 
-import Bab from './src/pages/Itens/Bab'
-import Bon from './src/pages/Itens/Bon'
-import Ros from './src/pages/Itens/Ros'
-import Sam from './src/pages/Itens/Bab'
-import Shop from './src/pages/Shop/Shop'
+// import Bab from './src/pages/Itens/Bab'
+// import Bon from './src/pages/Itens/Bon'
+// import Ros from './src/pages/Itens/Ros'
+// import Sam from './src/pages/Itens/Bab'
+// import Shop from './src/pages/Shop/Shop'
 
 
 
 
-const App = () => {
+// const App = () => {
 
-  return (
+//   return (
 
-       //<Bab /> 
-       //<Bon />
-       //<Ros />
-       //<Sam />
+//        //<Bab /> 
+//        //<Bon />
+//        //<Ros />
+//        //<Sam />
 
-       <Shop />
+//        <Shop />
     
+//   );
+// };
+
+// export default App;
+
+import {NavigationContainer} from '@react-navigation/native';
+// import {createDrawerNavigator} from '@react-navigation/drawer';
+import Drw from './src/Routes/app.routes';
+import CartContext from './src/context/CartC';
+
+function App() {
+  return (
+    <CartContext>
+      <NavigationContainer>
+        <Drw />
+      </NavigationContainer>
+    </CartContext>
   );
-};
+}
 
 export default App;
+

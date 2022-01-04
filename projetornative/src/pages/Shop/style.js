@@ -155,4 +155,4 @@ const st = StyleSheet.create({
     
 });
 
-export default st; 
+export default st

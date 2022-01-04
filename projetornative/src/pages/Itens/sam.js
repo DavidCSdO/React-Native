@@ -45,4 +45,4 @@ function Sam() {
 }
 
 
-export default Sam;
+export default Sam
